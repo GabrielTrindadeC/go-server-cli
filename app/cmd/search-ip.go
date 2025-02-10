@@ -2,7 +2,7 @@ package cmd
 
 import (
 	"fmt"
-	"go-cli/utils"
+	"go-server-cli/utils"
 	"log"
 	"net"
 

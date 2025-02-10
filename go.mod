@@ -1,4 +1,4 @@
-module go-cli
+module go-server-cli
 
 go 1.23.4
 

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"go-cli/app"
+	"go-server-cli/app"
 	"os"
 )
 func main() {
