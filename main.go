@@ -9,5 +9,4 @@ func main() {
 	if erro := app.Run(os.Args); erro != nil {
 		panic(erro)
 	}
-	
 }
