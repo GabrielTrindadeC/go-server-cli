@@ -1,7 +1,7 @@
 package app
 
 import (
-	"go-cli/app/cmd"
+	"go-server-cli/app/cmd"
 
 	"github.com/urfave/cli"
 )
@@ -28,6 +28,16 @@ func Init() *cli.App {
 			Usage: "Busca o nome do servidor",
 			Flags: flags,
 			Action: cmd.SearchNs,
+		},
+		{
+			Name: "ping",
+			Usage: "Faz um ping em um IP específico",
+			Flags: []cli.Flag{
+				cli.StringFlag{
+					Name: "ip",
+				},
+			},
+			Action: cmd.Ping,
 		},
 	}
 	return app
