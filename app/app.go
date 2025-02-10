@@ -27,7 +27,7 @@ func Init() *cli.App {
 			Name: "server",
 			Usage: "Busca o nome do servidor",
 			Flags: flags,
-			Action: cmd.SearchIp,
+			Action: cmd.SearchNs,
 		},
 	}
 	return app
