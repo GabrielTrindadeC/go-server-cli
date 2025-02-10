@@ -47,7 +47,7 @@ Comandos:
 ### ping - Teste de ping
 
 ```sh
-./go-server-cli ping --host 8.8.8.8
+./go-server-cli ping --ip 8.8.8.8
 ```
 
 ### help - Ajuda geral
