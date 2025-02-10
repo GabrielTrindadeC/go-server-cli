@@ -19,6 +19,6 @@ func SearchNs(c *cli.Context) {
 		log.Fatal(err)
 	}
 	for _, server := range servers {
-		fmt.Println(server)
+		fmt.Println(server.Host)
 	}
 }
