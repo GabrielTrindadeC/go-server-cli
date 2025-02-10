@@ -11,16 +11,22 @@ func Init() *cli.App {
 	app.Name = "app"
 	app.Usage = "Minha primeira CLI"
 	app.Version = "1.0.0"
+	flags := []cli.Flag{
+		cli.StringFlag{
+			Name: "host",
+			Value: "google.com",
+		}}
 	app.Commands = []cli.Command{
 		{
 			Name: "ip",
 			Usage: "Busca IPs de servidores na internet",
-			Flags: []cli.Flag{
-				cli.StringFlag{
-					Name: "host",
-					Value: "google.com",
-				},
-			},
+			Flags: flags,
+			Action: cmd.SearchIp,
+		},
+		{
+			Name: "server",
+			Usage: "Busca o nome do servidor",
+			Flags: flags,
 			Action: cmd.SearchIp,
 		},
 	}
